@@ -1,10 +1,10 @@
 <template>
-  <div class="bg-gray-100 py-16 p-5">
-    <div class="grid grid-cols-3">
+  <div class="bg-gray-100 pt-24 pb-12 md:py-16 p-5">
+    <div class="md:grid md:grid-cols-3">
       <h1 class="col-start-2 text-2xl text-center font-bold">
         Popular Courses
       </h1>
-      <div class="flex justify-end">
+      <div class="mt-5 md:mt-0 flex justify-center md:justify-end">
         <select class="p-1">
           <option selected>All Courses</option>
           <option

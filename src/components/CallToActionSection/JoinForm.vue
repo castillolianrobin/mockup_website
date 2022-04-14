@@ -1,31 +1,33 @@
 <template>
-  <div class="bg-primary-100 py-10 p-8 gap-3 flex flex-col">
-    <h5 class="text-center font-semibold text-2xl">Join Us Free!</h5>
-    <AppTextField
-      label="First Name"
-      placeholder="Enter First Name"
-    ></AppTextField>
-    <AppTextField
-      label="Last Name"
-      placeholder="Enter Last Name"
-    ></AppTextField>
-    <AppTextField label="Email" placeholder="Enter Email"></AppTextField>
-    <AppTextField
-      label="Password"
-      type="password"
-      placeholder="Enter 8 or 10 characters"
-    ></AppTextField>
-    <p>
-      By signing up, you agree to our
-      <router-link to="#" class="text-orange-500">Terms of Use</router-link> and
-      <router-link to="#" class="text-orange-500">Privacy Policy</router-link>.
-    </p>
-    <div class="grid grid-cols-2 gap-3">
-      <AppButton outline>Join as Professional</AppButton>
-      <AppButton>Join as Professional</AppButton>
+  <div class="bg-primary-100 p-3 md:py-10 md:p-8 gap-3 flex flex-col shadow-md">
+    <h5 class="text-center font-semibold md:text-2xl">Join Us Free!</h5>
+    <div class="hidden md:block">
+      <AppTextField
+        label="First Name"
+        placeholder="Enter First Name"
+      ></AppTextField>
+      <AppTextField
+        label="Last Name"
+        placeholder="Enter Last Name"
+      ></AppTextField>
+      <AppTextField label="Email" placeholder="Enter Email"></AppTextField>
+      <AppTextField
+        label="Password"
+        type="password"
+        placeholder="Enter 8 or 10 characters"
+      ></AppTextField>
+      <p>
+        By signing up, you agree to our
+        <router-link to="#" class="text-orange-500">Terms of Use</router-link> and
+        <router-link to="#" class="text-orange-500">Privacy Policy</router-link>.
+      </p>
     </div>
-    <p class="text-center text-gray-500">or create an account using</p>
     <div class="grid grid-cols-2 gap-3">
+      <AppButton outline class="text-xs md:text-base">Join as Professional</AppButton>
+      <AppButton class="text-xs md:text-base">Join as Professional</AppButton>
+    </div>
+    <p class="hidden md:block text-center text-gray-500">or create an account using</p>
+    <div class="hidden md:grid grid-cols-2 gap-3">
       <AppButton color="blue-900">
         <img src="@/assets/facebookLogo.png" class="w-4 mr-2" />
         Facebook

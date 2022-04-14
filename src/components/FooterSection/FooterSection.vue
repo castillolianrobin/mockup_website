@@ -1,7 +1,7 @@
 <template>
   <footer>
-    <section class="px-10 py-16 flex bg-blue-900 text-white">
-      <div class="grid grid-cols-4 flex-grow">
+    <section class="px-10 py-16 flex flex-col md:flex-row bg-blue-900 text-white">
+      <div class="grid gap-5 grid-cols-2 md:grid-cols-4 flex-grow">
         <div v-for="(item, index) in footerItems" :key="`footer-item-${index}`">
           <p class="font-semibold">{{ item.title }}</p>
           <div class="mt-3 flex flex-col gap-2 text-sm">
@@ -9,16 +9,16 @@
               v-for="(linkItems, index) in item.items"
               :key="`link-item-${item.tile + index}`"
               to="#"
-              class="hover:text-orange-500 transition"
+              class="hover:text-orange-500 transition font-thin md:font-normal"
             >
               {{ linkItems }}
             </router-link>
           </div>
         </div>
       </div>
-      <div class="w-1/3">
+      <div class="md:w-1/3 mt-10 md:mt-0">
         <!-- Icons -->
-        <div class="flex gap-5">
+        <div class="flex gap-5 justify-center md:justify-start">
           <!-- facebook icon -->
           <div class="cursor-pointer">
             <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,7 +41,7 @@
             </svg>
           </div>
         </div>
-        <p class="mt-4">Follow us on social media for more updates!</p>
+        <p class="mt-4 text-center md:text-left">Follow us on social media for more updates!</p>
       </div>
     </section>
     <section class="py-3 bg-blue-400 flex items-center justify-center gap-3">
