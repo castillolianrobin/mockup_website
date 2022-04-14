@@ -17,7 +17,7 @@
       </div>
     </div>
     <!-- types -->
-    <div class="mt-10 flex gap-5 justify-center">
+    <div class="mt-10 hidden md:flex gap-5 justify-center">
       <h3
         v-for="(type, index) in types"
         :key="`type-${index + type.name}`"
