@@ -21,7 +21,7 @@
       <h3
         v-for="(type, index) in types"
         :key="`type-${index + type.name}`"
-        class="px-4 py-2 cursor-pointer hover:bg-blue-500 rounded transition"
+        class="px-4 py-2 cursor-pointer hover:bg-blue-300 rounded transition"
         :class="{
           'text-white bg-blue-500 ': type.active,
         }"

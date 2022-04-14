@@ -2,9 +2,9 @@
   <div
     class="px-10 py-6 grid grid-cols-2 md:flex gap-20 justify-center bg-[url('@/assets/numbers/bg.jpg')]"
   >
-    <div v-for="(number, index) in numbers" :key="`numbers-${index}`">
-      <h1 class="text-white text-4xl font-bold">{{ number.number }}</h1>
-      <div class="my-4 h-1 w-10 bg-orange-500"></div>
+    <div v-for="(number, index) in numbers" :key="`numbers-${index}`" class="group cursor-pointer">
+      <h1 class="text-white group-hover:text-orange-500 text-4xl font-bold  transition-all">{{ number.number }}</h1>
+      <div class="my-4 h-1 w-10 min-w-0 group-hover:min-w-full transition-all bg-orange-500"></div>
       <p class="text-white text-sm">{{ number.title }}</p>
     </div>
   </div>

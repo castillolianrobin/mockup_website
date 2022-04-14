@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative p-4 text-white min-h-[200px]"
+    class="cursor-pointer relative p-4 text-white min-h-[200px] hover:opacity-70 transiton"
   >
     <img :src="img" class="absolute top-0 left-0 h-full w-full object-cover shadow-[inset_0_-70px_30px_-10px_rgba(0,0,0,0.3)]" />
     <div class="relative z-20 flex flex-col justify-end items-start h-full w-full">

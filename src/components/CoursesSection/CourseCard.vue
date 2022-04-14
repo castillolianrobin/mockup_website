@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white rounded p-2 w-72 shadow-md">
+  <div class="bg-white hover:opacity-70 transition rounded p-2 w-72 shadow-md hover:shadow-lg">
     <img :src="require('@/assets/courses/' + img)" />
     <h5 class="mt-3 font-bold">{{ title }}</h5>
     <div class="mt-3 flex justify-between">
