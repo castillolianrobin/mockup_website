@@ -1,6 +1,6 @@
 <template>
   <div>
-    <label class="block">{{ label }}</label>
+    <label v-if="label" class="block">{{ label }}</label>
     <input :value="value" :type="type"  class="p-1.5 w-full border" @input="changeValue" v-bind="$attrs"/>
   </div>
 </template>

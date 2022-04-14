@@ -11,11 +11,11 @@
     <!-- Membership Section -->
     <MembershipSection></MembershipSection>
     <!-- Numbers Section -->
-    <div></div>
+    <NumbersSection></NumbersSection>
     <!-- Form Section -->
-    <div></div>
+    <ContactUsSection></ContactUsSection>
     <!-- Footer Section -->
-    <div></div>
+    <FooterSection></FooterSection>
 
   </div>
 </template>
@@ -26,6 +26,9 @@ import CallToActionSection from '@/components/CallToActionSection/CallToActionSe
 import CoursesSection from '@/components/CoursesSection/CoursesSection.vue'
 import EventsSection from '@/components/EventsSection/EventsSection.vue'
 import MembershipSection from '@/components/MembershipSection/MembershipSection.vue'
+import NumbersSection from '@/components/NumbersSection/NumbersSection.vue'
+import ContactUsSection from '@/components/ContactUsSection/ContactUsSection.vue'
+import FooterSection from '@/components/FooterSection/FooterSection.vue'
 // @ is an alias to /src
 
 export default {
@@ -35,7 +38,10 @@ export default {
     CallToActionSection,
     CoursesSection,
     EventsSection,
-    MembershipSection
+    MembershipSection,
+    NumbersSection,
+    ContactUsSection,
+    FooterSection
   }
 }
 </script>
