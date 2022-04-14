@@ -1,15 +1,15 @@
 <template>
   <div class="home">
     <!-- Nav Section -->
-    <NavBar></NavBar>
+    <NavSection></NavSection>
     <!-- Call to Action Section -->
-    <CallToAction></CallToAction>
+    <CallToActionSection></CallToActionSection>
     <!-- Courses Section -->
-    <div></div>
+    <CoursesSection></CoursesSection>
     <!-- Events Section -->
-    <div></div>
+    <EventsSection></EventsSection>
     <!-- Membership Section -->
-    <div></div>
+    <MembershipSection></MembershipSection>
     <!-- Numbers Section -->
     <div></div>
     <!-- Form Section -->
@@ -21,15 +21,21 @@
 </template>
 
 <script>
-import NavBar from '@/components/NavBar/NavBar.vue'
-import CallToAction from '@/components/CallToAction/CallToAction.vue'
+import NavSection from '@/components/NavSection/NavSection.vue'
+import CallToActionSection from '@/components/CallToActionSection/CallToActionSection.vue'
+import CoursesSection from '@/components/CoursesSection/CoursesSection.vue'
+import EventsSection from '@/components/EventsSection/EventsSection.vue'
+import MembershipSection from '@/components/MembershipSection/MembershipSection.vue'
 // @ is an alias to /src
 
 export default {
   name: 'HomeView',
   components: {
-    NavBar,
-    CallToAction,
+    NavSection,
+    CallToActionSection,
+    CoursesSection,
+    EventsSection,
+    MembershipSection
   }
 }
 </script>

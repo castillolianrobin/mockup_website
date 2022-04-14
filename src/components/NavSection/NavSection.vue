@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-white border-b border-orange-500 px-6 py-3 flex justify-between items-center"
+    class="sticky top-0 z-50 bg-white border-b border-orange-500 px-6 py-3 flex justify-between items-center"
   >
     <!-- Logo -->
     <div class="flex gap-4">
