@@ -62,7 +62,7 @@ export default {
         { title: "CPD", items: ["Online Courses", "Events", "Memberships"] },
         {
           title: "Join Us",
-          items: ["Sign Up as Professiona", "Sign Up as Provider"],
+          items: ["Sign Up as Professional", "Sign Up as Provider"],
         },
         {
           title: "Terms & Conditions",
