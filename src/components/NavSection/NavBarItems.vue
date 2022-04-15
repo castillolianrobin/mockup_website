@@ -49,6 +49,9 @@ export default {
   mounted() {
     this.assignScroll();
   },
+  updated() {
+    this.assignScroll();
+  },
 };
 </script>
 
