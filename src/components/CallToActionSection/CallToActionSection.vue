@@ -1,5 +1,6 @@
 <template>
   <div
+    id="section1"
     class="call-to-action relative bg-cover pb-28 pt-10 md:py-10 w-full flex flex-col md:flex-row gap-28 items-center justify-center bg-[url('@/assets/callToActionBg.png')]"
   >
     <div class="text-white">

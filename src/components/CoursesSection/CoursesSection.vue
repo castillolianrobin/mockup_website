@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-100 pt-24 pb-12 md:py-16 p-5">
+  <div id="section2" class="bg-gray-100 pt-24 pb-12 md:py-16 p-5">
     <div class="md:grid md:grid-cols-3">
       <h1 class="col-start-2 text-2xl text-center font-bold">
         Popular Courses

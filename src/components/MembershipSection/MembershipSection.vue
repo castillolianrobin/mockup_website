@@ -1,5 +1,5 @@
 <template>
-  <div class="p-10 py-20">
+  <div id="section4" class="p-10 py-20">
     <div class="text-center">
       <h2 class="text-2xl font-semibold">Memberships</h2>
       <h5 class="mt-1 font-light">Join Accredited Professional Organizations in your field</h5>

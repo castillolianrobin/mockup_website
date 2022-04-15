@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-blue-800 p-10 py-20">
+  <div id="section3" class="bg-blue-800 p-10 py-20">
     <div class="text-white text-center">
       <h2 class="text-2xl font-semibold">Events</h2>
       <h5 class="mt-1 font-light">

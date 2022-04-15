@@ -1,5 +1,5 @@
 <template>
-  <div class="px-10 md:px-44 py-20 flex flex-col md:flex-row bg-gray-100">
+  <div id="section5" class="px-10 md:px-44 py-20 flex flex-col md:flex-row bg-gray-100">
     <!-- get in touch -->
     <div class="md:w-2/5 md:px-10">
       <h2 class="md:text-2xl font-bold">Get In Touch</h2>

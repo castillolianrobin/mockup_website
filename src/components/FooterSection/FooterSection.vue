@@ -7,7 +7,7 @@
           <div class="mt-3 flex flex-col gap-2 text-sm">
             <router-link
               v-for="(linkItems, index) in item.items"
-              :key="`link-item-${item.tile + index}`"
+              :key="`link-item-${item.tile}${index}`"
               to="#"
               class="hover:text-orange-500 transition font-thin md:font-normal"
             >

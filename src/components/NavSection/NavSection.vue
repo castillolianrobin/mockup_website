@@ -34,6 +34,8 @@
       <NavBarItems
         v-for="(item, index) in navItems"
         :key="`navItem-${item.name + index}`"
+        :sectionID="item.id"
+        :currentScroll="currentScroll"
       >
         {{ item.name }}
       </NavBarItems>
@@ -59,15 +61,37 @@ export default {
   data() {
     return {
       showNav: false,
+      currentScroll: 0,
       navItems: [
-        { name: "Home", active: false },
-        { name: "Courses", active: false },
-        { name: "Events", active: false },
-        { name: "Memberships", active: false },
-        { name: "Contact Us", active: false },
+        { name: "Home", id: 'section1' },
+        { name: "Courses", id: 'section2' },
+        { name: "Events", id: 'section3'},
+        { name: "Memberships", id: 'section4' },
+        { name: "Contact Us", id: 'section5' },
       ],
     };
   },
+
+  methods: {
+    goto(refName) {
+      var element = document.getElementById(refName);
+      console.log(element);
+
+      var top = element.offsetTop;
+
+      window.scrollTo(0, top);
+    },
+    handleScroll() {
+      this.currentScroll = window.scrollY;
+    }
+  },
+
+  created: function () {
+      window.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed: function () {
+      window.removeEventListener('scroll', this.handleScroll);
+  }
 };
 </script>
 
