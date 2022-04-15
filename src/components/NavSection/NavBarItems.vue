@@ -26,7 +26,7 @@ export default {
 
   computed: {
     active() {
-      return this.scrollBot >= this.currentScroll && this.scrollTop <= this.currentScroll ;
+      return this.scrollBot > this.currentScroll && this.scrollTop <= this.currentScroll ;
     },
   },
 
