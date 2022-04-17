@@ -1,7 +1,7 @@
 <template>
   <div class="bg-primary-100 p-3 md:py-10 md:p-8 gap-3 flex flex-col shadow-md">
     <h5 class="text-center font-semibold md:text-2xl">Join Us Free!</h5>
-    <div class="hidden md:block">
+    <div class="hidden md:flex flex-col gap-3">
       <AppTextField
         label="First Name"
         placeholder="Enter First Name"
